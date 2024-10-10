@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos se movam para a próxima linha, se necessário */
+    justify-content: center; /* Centraliza os produtos */
+    margin-top: 20px; /* Espaço acima dos produtos */
+}
+
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave */
+    width: 200px; /* Define uma largura fixa para cada produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+}
+
+.produto:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.imagem-produto {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+button.adicionar {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.adicionar:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
